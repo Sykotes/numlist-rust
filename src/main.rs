@@ -88,7 +88,7 @@ fn export_file(values: &[f64], path: &str) -> io::Result<()> {
 fn main() -> Result<()> {
     println!("Enter a number and it will be added to the list");
     println!("Type \"help\" for list of commands");
-    let mut user_inputs: Vec<f64> = [0.0, 25.2, -5.8, 25000000.0].to_vec();
+    let mut user_inputs: Vec<f64> = Vec::new();
 
     let mut rl = DefaultEditor::new()?;
     loop {
